@@ -30,7 +30,7 @@ function App() {
       // });
     } catch (e) {
       console.error(e);
-      alert(e.message);
+      alert("failed to fetch data");
     }
   }
 
