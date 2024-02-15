@@ -20,7 +20,7 @@ function App() {
   async function getApiData() {
     try {
       const res = await fetch(
-        "https://geektrust.s3-ap-southeast-1.amazonaws.com/adminui-problem/members.json"
+        "https://gektrust.s3-ap-southeast-1.amazonaws.com/adminui-problem/members.json"
       );
       const data = await res.json();
       arryData.current = data;
@@ -30,7 +30,7 @@ function App() {
       // });
     } catch (e) {
       console.error(e);
-      alert("failed in fetching data");
+      alert(e.message);
     }
   }
 
